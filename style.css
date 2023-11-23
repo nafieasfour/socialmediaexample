@@ -1,0 +1,138 @@
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        /*nav bar style start*/ 
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .group-one {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo-placeholder {
+            color: white;
+            margin-right: 20px; /* Adjust the spacing as needed */
+        }
+
+        .search-input {
+            padding: 8px;
+            border: none;
+            border-radius: 5px;
+            margin-right: 20px; /* Adjust the spacing as needed */
+        }
+
+        .group-two {
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .header-tab {
+            color: white;
+            margin: 0 20px; /* Adjust the spacing as needed */
+            cursor: pointer;
+        }
+
+        .group-three {
+            display: flex;
+            align-items: center;
+        }
+
+        .round-icon {
+            width: 30px;
+            height: 30px;
+            background-color: white;
+            border-radius: 50%;
+            margin-left: 20px; /* Adjust the spacing as needed */
+        }
+        /*nav bar style end*/
+
+        /*left side bar style start*/
+        
+.sidebar {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 50;
+  left: 50;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+
+/*left side bar style end*/
+
+/* right side style start*/
+.rightsidebar {
+  width: 200px; /* Adjust the width based on your design */
+  background-color: #555;
+  height: 100vh; /* Full height of the viewport */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 900; /* Lower than nav z-index */
+  padding-top: 6px; /* Adjust this value based on your nav height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+  margin-top: 50px;
+}
+
+.sidebar-icon {
+  margin-bottom: 10px; /* Adjust spacing between icons */
+}
+
+
+
+
+/* right side style start*/
+
+/* right side style end*/
+
+#content{
+  display: block;
+  padding-left: 200px;
+}
+
+.post{
+  display: block;
+}
+
+#postholder{
+  height: 50px;
+}
